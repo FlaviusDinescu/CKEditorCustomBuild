@@ -25,6 +25,7 @@ import { Table, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
 import { Markdown } from '@ckeditor/ckeditor5-markdown-gfm';
+import {SourceEditing} from "@ckeditor/ckeditor5-source-editing";
 
 export default class ClassicEditor extends ClassicEditorBase {
 	public static override builtinPlugins = [
@@ -53,13 +54,14 @@ export default class ClassicEditor extends ClassicEditorBase {
 		Table,
 		TableToolbar,
 		TextTransformation,
-		Markdown
+		Markdown,
+		SourceEditing
 	];
 
 	public static override defaultConfig = {
 		toolbar: {
 			items: [
-				'source',
+				'sourceEditing',
 				'|','undo', 'redo',
 				'|', 'heading',
 				'|', 'bold', 'italic',
