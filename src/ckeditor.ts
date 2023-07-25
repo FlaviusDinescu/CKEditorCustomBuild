@@ -59,7 +59,8 @@ export default class ClassicEditor extends ClassicEditorBase {
 	public static override defaultConfig = {
 		toolbar: {
 			items: [
-				'undo', 'redo',
+				'source',
+				'|','undo', 'redo',
 				'|', 'heading',
 				'|', 'bold', 'italic',
 				'|', 'link', 'uploadImage', 'insertTable', 'blockQuote', 'mediaEmbed',
