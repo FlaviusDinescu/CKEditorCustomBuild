@@ -63,7 +63,7 @@ export default class ClassicEditor extends ClassicEditorBase {
 			items: [
 				'sourceEditing',
 				'|','undo', 'redo',
-				'|', 'heading',
+
 				'|', 'bold', 'italic',
 				'|', 'link', 'uploadImage', 'insertTable', 'blockQuote', 'mediaEmbed',
 				'|', 'bulletedList', 'numberedList', 'outdent', 'indent'
